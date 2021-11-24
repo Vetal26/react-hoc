@@ -1,19 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import FilteredList from './FilteredList';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-const starWarsChars = [
-  { name: 'Дарт Вейдер', side: 'dark' },
-  { name: 'Люк Скайвокер', side: 'light' },
-  { name: 'Палпатин', side: 'dark' },
-  { name: 'Обиван Кеноби', side: 'light' },
-];
 
 ReactDOM.render(
   <React.StrictMode>
-    <FilteredList list={starWarsChars} side="light" />
+    <App />
   </React.StrictMode>,
   document.getElementById('root'),
 );
